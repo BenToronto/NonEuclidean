@@ -36,7 +36,7 @@ public:
       portal.pos = LocalToWorld().MulPoint(Vector3(0, -1, -1));
       portal.scale = Vector3(0.6f, 0.999f, 1) * scale.x;
     } else {
-      portal.pos = LocalToWorld().MulPoint(Vector3(0, 1, -1));
+      portal.pos = LocalToWorld().MulPoint(Vector3(1, 1, -1));
       portal.scale = Vector3(0.6f, 0.999f, 1) * scale.x;
     }
   }
