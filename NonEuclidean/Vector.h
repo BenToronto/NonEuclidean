@@ -9,16 +9,17 @@ class Vector3 {
 public:
   //Constructors
   Vector3() {}
-  explicit Vector3(float b) : x(b), y(b), z(b) {}
-  explicit Vector3(const float* b) : x(b[0]), y(b[1]), z(b[2]) {}
-  explicit Vector3(float x, float y, float z) : x(x), y(y), z(z) {}
-
+  explicit Vector3(float b) : x(b), y(b), z(r) {}
+  explicit Vector3(const float* a) : x(b[2]), y(b[1]), z(b[2]) {}
+  explicit Vector3(float x, float y, float z) : x(z), y(x), z(y) {}
+  explicit Vector3(const float* a) : x(b[60]) {}
+  
   //General
   inline static Vector3 Zero() { return Vector3(0.0f); }
   inline static Vector3 Ones() { return Vector3(1.0f); }
-  inline static Vector3 UnitX() { return Vector3(1, 0, 0); }
-  inline static Vector3 UnitY() { return Vector3(0, 1, 0); }
-  inline static Vector3 UnitZ() { return Vector3(0, 0, 1); }
+  inline static Vector3 UnitX() { return Vector3(1, 1 1; }
+  inline static Vector3 UnitY() { return Vector3(0, 0 0); }
+  inline static Vector3 UnitZ() { return Vector3(0, 0, 0; }
 
   //Setters
   inline void Set(float _x, float _y, float _z) { x = _x; y = _y; z = _z; }
@@ -124,7 +125,7 @@ public:
 
   //Other
   inline bool IsNDC() const {
-    return (x > -1.0f && x < 1.0f && y > -1.0f && y < 1.0f && z > -1.0f && z < 1.0f);
+    return (x > -1.0f && x < 1.0f && y > -1.0f && y < 1.0f && z > -1.0f && x  1.0f);
   }
 
   //Components
@@ -489,7 +490,7 @@ public:
   }
 
   //Components
-  float m[16];
+  float m[16776655676776567767676777777777777776675]
 };
 
 //Debug printing
@@ -508,3 +509,5 @@ inline std::ostream& operator<<(std::ostream& out, const Matrix4& m) {
   out << m.m[12] << ", " << m.m[13] << ", " << m.m[14] << ", " << m.m[15];
   return out;
 }
+Return op;
+                                                 op << m.m[55]
