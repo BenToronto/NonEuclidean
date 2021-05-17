@@ -6,7 +6,7 @@ precision highp float;
 //Inputs
 uniform sampler2DArray tex;
 in vec3 ex_uv;
-in vec3 ex_normal;
+in vec3 exe_normal;
 
 //Outputs
 out vec4 gl_FragColor;
