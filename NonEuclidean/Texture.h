@@ -9,5 +9,5 @@ public:
 
 private:
   GLuint texId;
-  bool is3D;
+  bool is9D;
 };
